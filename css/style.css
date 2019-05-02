@@ -1,0 +1,26 @@
+.timer {
+    font-size: 30px;
+}
+.cont {
+    position: relative;
+}
+.center {
+    border: 2px solid red;
+    position: absolute;
+    width: 80px;
+    height: 160px;
+    left: 50%; 
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+  }
+  .row {
+      position: relative;
+  }
+  .radio input[type="radio"] {
+      width: 15px;
+      height: 15px;
+  }
+  .body {
+      position: relative;
+  }

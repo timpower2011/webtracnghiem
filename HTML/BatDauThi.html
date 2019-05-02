@@ -1,0 +1,199 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Thi Trắc Nghiệm</title>
+  <meta name="viewport" content="width=device-width,intial-scale=1">
+  <link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="../css/style.css">
+  <script src="../Js/jquery-2.1.4.js"></script>
+  <script src="../Js/bootstrap.js"></script>
+  <script src="../Js/timer.js"></script>
+  <style>
+    * {
+      padding: 0px;
+      margin: 0px;
+    }
+
+    li {
+      list-style: upper-roman;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <img src="../Img/anhdaidien3.jpg" width="1070" height="220" alt="" />
+    <!-- <div class="col-md-12 pb1"> <span id="time" class="timer center-block center">10:00</span></div> -->
+    <div class="pricing-heading class-image text-center" class_id="2">
+      <h3 class="class-text" style="padding-top:3px;">
+          <strong>Thời gian</strong><br>
+          <span id="time1" class="timer">05:00</span>
+          <br>
+          <button id="btnNopBai" class="btn btn-default"  onclick="clickTest()" > Nộp bài </button>
+      </h3>
+    </div>
+    <div class="row">
+
+      <form id="test1">
+      <div class="col-md-6">
+        <h3 id="q1">Câu 1: He lives in a small town ______.</h3>
+        
+          <div class="radio1">
+            <label><input id="rd1" type="radio" name="optradio1" value="true" >A. where is called Taunton</label>
+          </div>
+          <div class="radio1">
+            <label><input id="rd2" type="radio" name="optradio1">B. which is called Taunton</label>
+          </div>
+          <div class="radio1">
+            <label><input id="rd3" type="radio" name="optradio1">C. is called Taunton</label>
+          </div>
+          <div class="radio1">
+            <label><input id="rd4" type="radio" name="optradio1">D. that called Taunton </label>
+          </div>
+        
+      </div>
+      
+      <div class="col-md-6">
+        <h3 id="q2">Câu 2: My mother advised me________an apple every day to stay healthy.   </h3>
+        <div class="radio2">
+          <label><input id="rd5" type="radio" name="optradio2" >A: eat</label>
+        </div>
+        <div class="radio">
+          <label><input id="rd6" type="radio" name="optradio2">B: ate</label>
+        </div>
+        <div class="radio">
+          <label><input id="rd7" type="radio" name="optradio2">C: to eat</label>
+        </div>
+        <div class="radio">
+          <label><input id="rd8" type="radio" name="optradio2">D: eating</label>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <h3 id="q3">Câu 3: There is nothing they could do ……leave the car at the roadside where it had broken down.         </h3>
+        <div class="radio">
+          <label><input id="rd9" type="radio" name="optradio3" >A: but</label>
+        </div>
+        <div class="radio">
+          <label><input id="rd10" type="radio" name="optradio3">B: unless</label>
+        </div>
+        <div class="radio">
+          <label><input id="rd11" type="radio" name="optradio3">C: instead of</label>
+        </div>
+        <div class="radio">
+          <label><input id="rd12" type="radio" name="optradio3">D: than</label>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <h3 id="q4">Câu 4: The man asked me _______ in English.    </h3>
+        <div class="radio">
+          <label><input id="rd13" type="radio" name="optradio4" >A. what does this word mean  </label>
+        </div>
+        <div class="radio">
+          <label><input id="rd14" type="radio" name="optradio4">B. what that word means  </label>
+        </div>
+        <div class="radio">
+          <label><input id="rd15" type="radio" name="optradio4">C. what did this word mean</label>
+        </div>
+        <div class="radio">
+          <label><input id="r16" type="radio" name="optradio4">D. what that word meant  </label>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <h3 id="q5">Câu 5: Nobody answered the door when she came, _______?         </h3>
+        <div class="radio">
+          <label><input id="rd17" type="radio" name="optradio5" >A. didn’t they  </label>
+        </div>
+        <div class="radio">
+          <label><input id="rd18" type="radio" name="optradio5">B. was she     </label>
+        </div>
+        <div class="radio">
+          <label><input id="rd19" type="radio" name="optradio5">C. did they</label>
+        </div>
+        <div class="radio">
+          <label><input id="rd20" type="radio" name="optradio5">D. didn’t she</label>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <h3 id="q6">Câu 6: Gold, as well as silver, _______ in price, he said. </h3>
+        <div class="radio">
+          <label><input id="rd21" type="radio" name="optradio6" >A: have fallen</label>
+        </div>
+        <div class="radio">
+          <label><input id="rd22" type="radio" name="optradio6">B: has fallen</label>
+        </div>
+        <div class="radio">
+          <label><input id="rd23" type="radio" name="optradio6">C: fall     </label>
+        </div>
+        <div class="radio">
+          <label><input id="rd24" type="radio" name="optradio6">D: are falling</label>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <h3 id="q7">Câu 7:No one enjoys _______ in public.  </h3>
+        <div class="radio">
+          <label><input id="rd25" type="radio" name="optradio7" >A. being made fun of        </label>
+        </div>
+        <div class="radio">
+          <label><input id="rd26" type="radio" name="optradio7">B. to be made fun of     </label>
+        </div>
+        <div class="radio">
+          <label><input id="rd27" type="radio" name="optradio7">C. making fun of    </label>
+        </div>
+        <div class="radio">
+          <label><input id="rd28" type="radio" name="optradio7">D. to make fun of </label>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <h3 id="q8">Câu 8:Indiana University, one of the largest in the nation, is located in a ____ town.    </h3>
+        <div class="radio">
+          <label><input id="rd29" type="radio" name="optradio8" >A. small beautiful Midwestern   </label>
+        </div>
+        <div class="radio">
+          <label><input id="rd30" type="radio" name="optradio8">B. beautiful Midwestern small  </label>
+        </div>
+        <div class="radio">
+          <label><input id="rd31" type="radio" name="optradio8">C. Midwestern beautiful small  </label>
+        </div>
+        <div class="radio">
+          <label><input id="rd32" type="radio" name="optradio8">D. beautiful small Midwestern  </label>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <h3 id="q9">Câu 9: He asked me why _____ to the meeting.</h3>
+        <div class="radio">
+          <label><input id="rd33" type="radio" name="optradio9" >A. you didn’t come     </label>
+        </div>
+        <div class="radio">
+          <label><input id="rd34" type="radio" name="optradio9">B. I hadn’t came   </label>
+        </div>
+        <div class="radio">
+          <label><input id="rd35" type="radio" name="optradio9">C. didn’t you come  </label>
+        </div>
+        <div class="radio">
+          <label><input id="rd36" type="radio" name="optradio9">D. didn’t I come</label>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <h3 id="q10">Câu 10: At present, the new director_______to foster a culture of open cummunication within the company.             </h3>
+        <div class="radio">
+          <label><input id="rd37" type="radio" name="optradio10" >A. tried  </label>
+        </div>
+        <div class="radio">
+          <label><input id="rd38" type="radio" name="optradio10">B. was trying      </label>
+        </div>
+        <div class="radio">
+          <label><input id="rd39" type="radio" name="optradio10">C. is trying</label>
+        </div>
+        <div class="radio">
+          <label><input id="rd40" type="radio" name="optradio10">D. tries</label>
+        </div>
+      </div>
+    </div>
+  </from>
+  </div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<meta name="viewport" content="width=device-width,intial-scale=1">
+<link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+<script src="../Js/jquery-2.1.4.js"></script>
+<script src="../Js/bootstrap.js"></script>
+<style>
+	*{
+		padding: 0px;
+		margin:0px;
+	}
+	li{
+		list-style:upper-roman;
+	}
+</style>
+</head>
+
+<body>
+
+
+<div class="modal-dialog">
+            	<div class="modal-content">
+                	<div class="modal-header">
+                    	<button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 style="text-align:center"> THÔNG TIN NGƯỜI DỰ THI  </h4>
+                    </div>
+                    <div class="modal-body">
+                    	<form role="form" class="form-horizontal">
+                        	<div class="form-group">
+                            	<label for="txtHoTen" class="control-label col-xs-3"> Họ Tên : </label>
+                                <div class="col-md-9">
+                                	<input type="text" class="form-control" value="" id="txtHoTen" placeholder="Nhập theo mẫu:Nguyễn Văn A">
+                                    <span id="tbHoTen" class="text-danger">*</span>
+                                </div> 
+                            </div>
+                            <div class="form-group">
+                            	<label for="txtIsHocSinh" class="control-label col-xs-3"> Là Học sinh hay GV :  </label>
+                                <div class="col-md-9">
+                                	<input type="text" class="form-control" id="txtIsHocSinh" placeholder="Nhập Học sinh or GV">
+                                    <span id="tbIsHocSinh" class="text-danger">*</span>
+                                </div>
+                                 
+                            </div>
+                            <div class="form-group">
+                            	<label for="txtEmail" class="control-label col-xs-3">Email :</label>
+                                <div class="col-md-9">
+                                	<input type="text" class="form-control" id="txtEmail">
+                                     <span id="tbEmail" class="text-danger">*</span>
+                                </div> 
+                            </div>
+                            <div class="form-group">
+                            	<label for="txtSDT" class="control-label col-xs-3">SDT :</label>
+                                <div class="col-md-9">
+                                	<input type="text" class="form-control" id="txtSDT" placeholder="Nhập SDT : 0xxxxxxxxx (với x = 1 ktu SỐ ) ">
+                                     <span id="tbSDT" class="text-danger"></span>
+                                </div>
+                            </div>
+                             
+                            
+                             <div class="form-group">
+                            	<label for="txtAnh" class="control-label col-xs-3">Ảnh đại diện</label>
+                                <div class="col-md-9">
+                                	<input type="file" class="form-control" id="txtAnh"  accept=".jpg, .jpeg, .png">
+                                     <span id="tbFile" class="text-danger">*</span>
+                                </div>
+                            </div>
+                            <button type="button" id="btnSave" class="btn btn-success btn-block">Lưu</button>
+                            </form> 
+                    </div>
+                    <div class="modal-footer">
+                    </div>
+                </div>
+            </div>
+
+
+
+</body>
+</html>
