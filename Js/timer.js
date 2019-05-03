@@ -34,20 +34,37 @@ function tinhtime() {
 }
 
 
-$(function(){
-    let i = 0;
-    $('input[type="radio"]').click(function(){
-        i++;
-      if ($(this).is(':checked'))
-      {
-        // alert($(this).val());
-        console.log($("input[name='optradio1']:checked").val())
-
-      }
-    });
-  });
 function clickTest() {
-    // console.log("ssdsdsd")
-    // document.getElementById("test1").submit();
+    let diem = 0;
+    let anwser = [];
+    for (let i=1; i<11; i++) {
+        // anwser.push($('input[name="optradio'+i+'"]:checked').parent('label').text())
+        anwser.push($('input[name="optradio'+i+'"]:checked').val())
+    }
+    for (let a of anwser) {
+        if (a && a=="true") {
+            diem++;
+        }
+    }
+    // localStorage.setItem('mark', JSON.stringify(diem));
+    var users = JSON.parse(localStorage.getItem('users'));
+    var current_user = JSON.parse(localStorage.getItem('current_user'));
+    for (let user of users) {
+        if (current_user.stt == user.stt) {
+            user.mark = diem;
+        }
+    }
+    localStorage.setItem('users', JSON.stringify(users));
+    var result = confirm(`Điểm của bạn là :${diem}`);
+if (result == true) {
+  window.location.href="../HTML/TrangChu.html";
+}
+ else {
+   alert("Cảm ơn đã ở lại!");
+   window.location.href="../HTML/TrangChu.html";
+      //console.log("cau 1: ",anwser)
+     // console.log("diem: ", diem)
+ }
     
+
 }

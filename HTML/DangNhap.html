@@ -7,6 +7,8 @@
 <link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
 <script src="../Js/jquery-2.1.4.js"></script>
 <script src="../Js/bootstrap.js"></script>
+<script src="../Js/rangbuoc.js"></script>
+
 <style>
 	*{
 		padding: 0px;
@@ -16,19 +18,20 @@
 		list-style:upper-roman;
 	}
 </style>
+
 </head>
 
 <body>
 
 
-<div class="modal-dialog">
+    <div class="modal-dialog">
             	<div class="modal-content">
                 	<div class="modal-header">
                     	<button type="button" class="close" data-dismiss="modal">&times;</button>
                         <h4 style="text-align:center"> THÔNG TIN NGƯỜI DỰ THI  </h4>
                     </div>
                     <div class="modal-body">
-                    	<form role="form" class="form-horizontal">
+                    	<form id="dangnhap" role="form" class="form-horizontal">
                         	<div class="form-group">
                             	<label for="txtHoTen" class="control-label col-xs-3"> Họ Tên : </label>
                                 <div class="col-md-9">
@@ -67,13 +70,15 @@
                                      <span id="tbFile" class="text-danger">*</span>
                                 </div>
                             </div>
-                            <button type="button" id="btnSave" class="btn btn-success btn-block">Lưu</button>
+                            <button type="button" id="btnSave" class="btn btn-success btn-block" onClick="TrangChu()">
+                            Lưu</button>
                             </form> 
                     </div>
                     <div class="modal-footer">
                     </div>
                 </div>
             </div>
+        </div>
 
 
 
